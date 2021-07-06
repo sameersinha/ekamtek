@@ -1,5 +1,6 @@
 const express = require("express");
 const { Octokit } = require("@octokit/core");
+const path = require('path');
 
 const app = express();
 
@@ -11,6 +12,7 @@ const owner = "sameersinha";
 const repo = "ekamtek";
 const perPage = 25;
 
+app.use(express.static(path.join(__dirname, '/public')));
 app.set('view engine', 'pug');
 app.set('views', './views');
 

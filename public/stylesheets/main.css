@@ -1,0 +1,17 @@
+#container {
+	margin:  auto;
+}
+
+table {
+	border-collapse: collapse;
+	border: black 1px solid;
+	padding: 3px;
+}
+
+tr {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 3px 15px;
+}
