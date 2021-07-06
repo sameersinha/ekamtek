@@ -17,10 +17,8 @@ app.set('views', './views');
 app.get('/commits', async (req, res) => {
 
 	const commits = await octokit.request(
-		`GET /repos/{owner}/{repo}/commits`, { owner, repo, per_page: perPage }
+		`GET /repos/{owner}/{repo}/commits`, { owner, repo }
 	);
-
-	console.log(commits);
 
 	res.render('main', { data: commits.data });
 });
