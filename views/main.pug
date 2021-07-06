@@ -6,6 +6,6 @@ html
 		ul
 			each d in data
 				if d.sha.slice(-1).match(/\d/)
-					li(style={background: 'yellow'})= d.author.name + ': ' + d.commit.message + ': ' + d.sha
+					li(style={background: 'yellow'})= d.author.login + ': ' + d.commit.message + ': ' + d.sha
 				else 
 					li= d.author.login + ': ' + d.commit.message + ': ' + d.sha
