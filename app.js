@@ -14,13 +14,15 @@ const perPage = 25;
 app.set('view engine', 'pug');
 app.set('views', './views');
 
-app.get('/', async (req, res) => {
+app.get('/commits', async (req, res) => {
 
 	const commits = await octokit.request(
 		`GET /repos/{owner}/{repo}/commits`, { owner, repo, per_page: perPage }
 	);
 
-	res.render('main', { commits });
+	console.log(commits);
+
+	res.render('main', { data: commits.data });
 });
 
 app.use((req, res) => {
