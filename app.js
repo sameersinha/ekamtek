@@ -10,11 +10,14 @@ const octokit = new Octokit();
 
 const owner = "sameersinha";
 const repo = "ekamtek";
-const perPage = 25;
 
 app.use(express.static(path.join(__dirname, '/public')));
 app.set('view engine', 'pug');
 app.set('views', './views');
+
+app.get('/', (req, res) => {
+	res.send('Home Page');
+});
 
 app.get('/commits', async (req, res) => {
 
