@@ -1,0 +1,24 @@
+{
+  "name": "ekamtek",
+  "version": "0.0.1",
+  "description": "\"# ekamtek\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sameersinha/ekamtek.git"
+  },
+  "author": "Sameer Sinha <sameersinha08@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sameersinha/ekamtek/issues"
+  },
+  "homepage": "https://github.com/sameersinha/ekamtek#readme",
+  "dependencies": {
+    "@octokit/core": "^3.5.1",
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
